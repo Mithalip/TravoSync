@@ -1,0 +1,10 @@
+<div class="register-container">
+    <h2>Admin Registration</h2>
+    <form [formGroup]="adminRegisterForm" (ngSubmit)="registerAdmin()">
+      <input type="text" formControlName="name" placeholder="Name" required>
+      <input type="text" formControlName="mobile" placeholder="Mobile No" required>
+      <input type="email" formControlName="email" placeholder="Email" required>
+      <input type="password" formControlName="password" placeholder="Password" required>
+      <button type="submit" [disabled]="!adminRegisterForm.valid">Register</button>
+    </form>
+  </div>

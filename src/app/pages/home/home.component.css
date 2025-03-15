@@ -1,0 +1,193 @@
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #003580;
+    color: white;
+    padding: 15px;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  /* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #003580;
+    color: white;
+    padding: 15px;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    color: black;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    min-width: 150px;
+  }
+  
+  .dropdown-menu li {
+    padding: 5px 0;
+  }
+  
+  .dropdown-menu a {
+    color: black;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+  }
+  
+  .dropdown-menu a:hover {
+    background: #f0f0f0;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+
+
+  
+  
+  /* Hero Section */
+  .hero-section {
+    background: url('https://wallpapercave.com/wp/wp3067500.jpg') center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .search-bar input {
+    width: 300px;
+    padding: 8px;
+    margin-right: 10px;
+  }
+  
+  /* Destinations Section */
+  .destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+  }
+  
+  .destination-card {
+    text-align: center;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .destination-card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+  }
+  
+  /* Travel Packages */
+  .packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+  }
+  
+  .package-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .package-card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+  }
+  
+  .package-card button {
+    margin-top: 10px;
+  }
+  
+  /* Why Choose Us */
+  .why-choose-us {
+    text-align: center;
+    padding: 2rem;
+    background: #f4f4f4;
+  }
+  
+  /* Testimonials */
+  .testimonials {
+    text-align: center;
+    padding: 2rem;
+    font-style: italic;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #003580;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  

@@ -1,0 +1,11 @@
+<div class="login-container">
+    <h2>User Login</h2>
+    <form [formGroup]="userLoginForm" (ngSubmit)="loginUser()">
+      <input type="email" formControlName="email" placeholder="Email" required>
+      <input type="password" formControlName="password" placeholder="Password" required>
+      <br>
+      <p>If you are a new User ...... Register First 😄</p>
+      <button type="button" (click)="register()">Register</button>
+      <button type="submit" [disabled]="!userLoginForm.valid">Login</button>
+    </form>
+</div>

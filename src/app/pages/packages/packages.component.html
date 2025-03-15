@@ -1,0 +1,36 @@
+<!-- Packages Hero Section -->
+<section class="packages-hero">
+    <h1>Explore Our Travel Packages 🌍</h1><br><br>
+    <br>
+    <h3>Find the best deals for your dream destinations.</h3>
+  </section>
+  
+  <!-- Categories Section -->
+  <section class="categories">
+    <h2>Choose Your Destination ✈️</h2>
+    <div class="category-buttons">
+      <button *ngFor="let category of packageCategories" (click)="filterPackages(category)" class="btn">
+        {{ category }}
+      </button>
+    </div>
+  </section>
+  
+  <!-- Travel Packages Grid -->
+  <section class="packages-grid">
+    <div *ngFor="let pkg of filteredPackages" class="package-card">
+      <img [src]="pkg.image" [alt]="pkg.title" />
+      <div class="package-info">
+        <h3>{{ pkg.title }}</h3>
+        <p><b>Destination:</b> {{ pkg.place }}</p>
+        <p><b>Duration:</b> {{ pkg.duration }}</p>
+        <p><b>Price:</b> ${{ pkg.price }}</p>
+        <button class="btn btn-success">Book Now</button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 <b>TravoSync</b>. All rights reserved.</p>
+  </footer>
+  

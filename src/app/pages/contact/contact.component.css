@@ -1,0 +1,64 @@
+.contact-hero {
+    text-align: center;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    padding: 50px 20px;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .info-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+  }
+  
+  .contact-form-section {
+    text-align: center;
+    padding: 40px;
+    background: #f8f9fa;
+  }
+  
+  .form-group {
+    margin: 15px 0;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .btn-primary {
+    background: #ff7e5f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .social-media {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .social-links img {
+    width: 40px;
+    margin: 10px;
+  }
+  
+  .footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
