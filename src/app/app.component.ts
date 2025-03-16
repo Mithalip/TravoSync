@@ -9,11 +9,13 @@ import { UserLoginComponent } from './main/user-login/user-login.component';
 import { UserRegisterComponent } from './main/user-register/user-register.component';
 import { PackagesComponent } from './pages/packages/packages.component';
 import { AdminPageComponent } from './pages/admin-page/admin-page.component';
+import { DashboardBookingComponent } from './pages/dashboard-booking/dashboard-booking.component';
+import { DashboardTourPackageComponent } from './pages/dashboard-tour-package/dashboard-tour-package.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,HomeComponent,ContactComponent,AboutUsComponent,PackagesComponent,AdminPageComponent,AdminLoginComponent,AdminRegisterComponent,UserLoginComponent,UserRegisterComponent],
+  imports: [RouterOutlet,HomeComponent,ContactComponent,AboutUsComponent,PackagesComponent,DashboardBookingComponent,DashboardTourPackageComponent,AdminPageComponent,AdminLoginComponent,AdminRegisterComponent,UserLoginComponent,UserRegisterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

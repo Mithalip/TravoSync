@@ -1,0 +1,39 @@
+<h2 class="text-center mb-4">Booking Details</h2>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-hover text-center shadow-lg bg-white rounded">
+        <thead class="table-dark">
+            <tr>
+                <th>Id</th>
+                <th>Booking Date</th>
+                <th>Number of Persons</th>
+                <th>Total Price</th>
+                <th>Tour Package ID</th>
+                <th>Tourist ID</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let booking of bookingArray | paginate:{itemsPerPage:2, currentPage:p}">
+                <td>{{booking.id}}</td>
+                <td>{{booking.booking_date}}</td>
+                <td>{{booking.number_of_person}}</td>
+                <td>{{booking.total_price | currency:'USD'}}</td>
+                <td>{{booking.tour_package_id}}</td>
+                <td>{{booking.tourist_id}}</td>
+                <td>
+                    <button class="btn btn-danger btn-sm me-2" (click)="deleteBooking(booking.id)">
+                        <i class="bi bi-trash3"></i> Delete
+                    </button>
+                    <button class="btn btn-primary btn-sm" (click)="updateBooking(booking.id)">
+                        <i class="bi bi-pencil-square"></i> Edit
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="pagination-container">
+    <pagination-controls (pageChange)="p=$event"></pagination-controls>
+</div>

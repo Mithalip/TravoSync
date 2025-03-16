@@ -8,6 +8,8 @@ import { AdminRegisterComponent } from './main/admin-register/admin-register.com
 import { UserRegisterComponent } from './main/user-register/user-register.component';
 import { PackagesComponent } from './pages/packages/packages.component';
 import { AdminPageComponent } from './pages/admin-page/admin-page.component';
+import { DashboardBookingComponent } from './pages/dashboard-booking/dashboard-booking.component';
+import { DashboardTourPackageComponent } from './pages/dashboard-tour-package/dashboard-tour-package.component';
 
 export const routes: Routes = [
 
@@ -15,6 +17,8 @@ export const routes: Routes = [
     {path:"contact",component:ContactComponent},
     {path:"about_us",component:AboutUsComponent},
     {path:"packages",component:PackagesComponent},
+    {path:"dashboard_booking",component:DashboardBookingComponent},
+    {path:"dashboard_tourPackage",component:DashboardTourPackageComponent},
     {path:"admin-page",component:AdminPageComponent},
      {path:"admin_login",component:AdminLoginComponent},
     {path:"user_login",component:UserLoginComponent},
